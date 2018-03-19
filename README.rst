@@ -20,6 +20,7 @@ Example Telegraf Configuration
        "telegraf-pgbouncer -h localhost -p 6432 -U monitor all"
      ]
      timeout = "5s"
+     name_suffix = "_pgbouncer"
      data_format = "json"
 
 CLI Usage
