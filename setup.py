@@ -1,7 +1,7 @@
 # coding=utf-8
 from setuptools import setup
 
-setup(name='telegraph-pgbouncer',
+setup(name='telegraf-pgbouncer',
       version='0.1.0',
       description='pgBouncer Stats Collector for Telegraf',
       long_description=open('README.rst').read(),
@@ -18,14 +18,14 @@ setup(name='telegraph-pgbouncer',
       keywords='static website generation',
       author='Gavin M. Roy',
       author_email='gavinmroy@gmail.com',
-      url='https://github.com/gmr/telegraph-pgbouncer',
+      url='https://github.com/gmr/telegraf-pgbouncer',
       license='BSD',
-      packages=['telegraph_pgbouncer'],
+      packages=['telegraf_pgbouncer'],
       package_data={'': ['LICENSE', 'README.rst']},
       include_package_data=True,
       install_requires=[
           'psycopg2-binary'
       ],
       entry_points=dict(console_scripts=[
-          'telegraph-pgbouncer=telegraph_pgbouncer.cli:main']),
+          'telegraf-pgbouncer=telegraf_pgbouncer.cli:main']),
       zip_safe=True)

@@ -1,6 +1,6 @@
 # coding=utf-8
 """
-CLI Application for telegraph-pgbouncer
+CLI Application for telegraf-pgbouncer
 
 """
 import argparse
@@ -11,7 +11,7 @@ import sys
 import psycopg2
 from psycopg2 import extras
 
-from telegraph_pgbouncer import __version__
+from telegraf_pgbouncer import __version__
 
 COMMANDS = {
     'all',
@@ -52,7 +52,7 @@ def parse_cli_arguments():
 
     """
     parser = argparse.ArgumentParser(
-        'telegraph-pgbouncer',
+        'telegraf-pgbouncer',
         'pgBouncer Stats Collector for Telegraf',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
         conflict_handler='resolve')

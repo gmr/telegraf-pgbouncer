@@ -17,7 +17,7 @@ Example Telegraf Configuration
    [[inputs.exec]]
      ## Commands array
      commands = [
-       "telegraph-pgbouncer -h localhost -p 6432 -U monitor all"
+       "telegraf-pgbouncer -h localhost -p 6432 -U monitor all"
      ]
      timeout = "5s"
      data_format = "json"
@@ -27,7 +27,7 @@ CLI Usage
 
 .. code-block::
 
-   $ telegraph-pgbouncer --help
+   $ telegraf-pgbouncer --help
    usage: pgBouncer Stats Collector for Telegraf
 
    positional arguments:
@@ -49,8 +49,8 @@ Authentication
 Specify the password in a `.pgpass <https://www.postgresql.org/docs/current/static/libpq-pgpass.html>`_ file
 for the application to connect properly without specifying a password.
 
-.. |Version| image:: https://img.shields.io/pypi/v/telegraph-pgbouncer.svg?
-   :target: https://pypi.org/project/telegraph-pgbouncer
+.. |Version| image:: https://img.shields.io/pypi/v/telegraf-pgbouncer.svg?
+   :target: https://pypi.org/project/telegraf-pgbouncer
 
-.. |License| image:: https://img.shields.io/pypi/l/telegraph-pgbouncer.svg?
-   :target: https://pypi.org/project/telegraph-pgbouncer
+.. |License| image:: https://img.shields.io/pypi/l/telegraf-pgbouncer.svg?
+   :target: https://pypi.org/project/telegraf-pgbouncer
