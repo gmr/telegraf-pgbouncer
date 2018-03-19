@@ -3,6 +3,7 @@ telegraph-pgbouncer
 Poll `pgBouncer <http://pgbouncer.github.io>`_ for stats to submit to
 `Telegraf <https://github.com/influxdata/telegraf>`_ using the
 `Exec Input Plugin <https://github.com/influxdata/telegraf/tree/master/plugins/inputs/exec>`_.
+
 |Version| |License|
 
 Usage
