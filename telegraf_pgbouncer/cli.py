@@ -97,7 +97,7 @@ def transform_databases(values):
             if k in ['database', 'force_user', 'host', 'name', 'port',
                      'pool_mode']:
                 continue
-            output[row['name']][mode][k] = v
+            output[row['database']][mode][k] = v
     return output
 
 

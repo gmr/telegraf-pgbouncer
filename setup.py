@@ -1,8 +1,10 @@
 # coding=utf-8
 from setuptools import setup
 
+from telegraf_pgbouncer import __version__
+
 setup(name='telegraf-pgbouncer',
-      version='0.1.0',
+      version=__version__,
       description='pgBouncer Stats Collector for Telegraf',
       long_description=open('README.rst').read(),
       classifiers=[
