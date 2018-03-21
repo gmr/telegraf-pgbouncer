@@ -88,16 +88,13 @@ def transform_databases(values):
     """
     output = {}
     for row in values:
-        if row['database'] not in output:
-            output[row['database']] = {}
-        mode = row['pool_mode'] or 'default'
-        if mode not in output[row['database']]:
-            output[row['database']][mode] = {}
+        if row['name'] not in output:
+            output[row['name']] = {}
         for k, v in row.items():
             if k in ['database', 'force_user', 'host', 'name', 'port',
                      'pool_mode']:
                 continue
-            output[row['database']][mode][k] = v
+            output[row['name']][k] = v
     return output
 
 
